@@ -6,13 +6,13 @@ let length = 8;
 let line = '';
 for(i = 0; i < length * (length + 1); i++){
     if(i % (length + 1) === 0){
-        line = line + '\n';
+        line += '\n';
     }
     else if(i % 2 === 0){
-        line = line + char2;
+        line += char2;
     }
     else{
-        line = line + char1;
+        line += char1;
     }
 };
 console.log(line);
